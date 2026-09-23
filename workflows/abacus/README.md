@@ -1,8 +1,10 @@
 # ABACUS SCF outputs to NAC
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 Prepare eigenstates from completed ABACUS SCF matrices and adjacent-frame AO
 overlaps from the corresponding SCF structures and orbitals. Finish with
-[common NAC projection](../common/README.md).
+[common NAC projection](../README.md#shared-nac-projection).
 
 | Script | Role |
 | --- | --- |
@@ -80,5 +82,5 @@ This overlap step also supplies the overlaps needed by the HamGNN route.
 ## Run NAC
 
 Set `ROUTE="$ABACUS_ROUTE"` and `SOURCE=abacus`, then follow
-[common NAC projection](../common/README.md) to link the overlaps and select
+[common NAC projection](../README.md#shared-nac-projection) to link the overlaps and select
 the physical band window and effective frame spacing.

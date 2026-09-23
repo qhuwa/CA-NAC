@@ -22,8 +22,12 @@ The [NAC workflows](workflows/README.md) are organized by input source:
   adjacent-frame AO overlaps.
 - [HamGNN](workflows/hamgnn/README.md): predicted Hamiltonians to eigenstates,
   using the ABACUS-generated AO overlaps.
-- [Common NAC projection](workflows/common/README.md): prepared eigenstates and
+- [Common NAC projection](workflows/README.md#shared-nac-projection): prepared eigenstates and
   overlaps to raw or state-tracked CA-NAC.
+
+中文说明：[流程总览与共用 NAC 投影](workflows/README.zh-CN.md)、
+[ABACUS 路线](workflows/abacus/README.zh-CN.md)、
+[HamGNN 路线](workflows/hamgnn/README.zh-CN.md)。
 
 ## Reference
 
@@ -43,5 +47,4 @@ Citation is much appreciated. 👍
 
   Weibin Chu, Qijing Zheng, Alexey V. Akimov, Jin Zhao, Wissam A. Saidi, and Oleg V. Prezhdo
 
-  _The Journal of Physical Chemistry Letters_ **2020** 11 (23), 10073-10080 
-
+  _The Journal of Physical Chemistry Letters_ **2020** 11 (23), 10073-10080
