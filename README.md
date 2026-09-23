@@ -14,6 +14,12 @@ is a code base to accurately and efficiently evaluate nonadiabatic coupling (NAC
 ## Known issues
 1. For AE-NAC only, currently, it does not support the `NORMALCAR` that is generated with gamma-only version VASP. Alternatively, you can use standard verision VASP to generate `WAVECAR` and `NORMALCAR` with only one gamma point in `KPOINTS`. 
 
+## ABACUS and HamGNN workflows
+
+See [assisted-scripts/README.md](assisted-scripts/README.md) for preparing
+Gamma-point eigenstates from ABACUS SCF matrices or HamGNN predictions, generating
+calibrated adjacent-frame AO overlaps, and running raw or state-tracked CA-NAC.
+
 ## Reference
 
 Citation is much appreciated. 👍
@@ -33,6 +39,5 @@ Citation is much appreciated. 👍
   Weibin Chu, Qijing Zheng, Alexey V. Akimov, Jin Zhao, Wissam A. Saidi, and Oleg V. Prezhdo
 
   _The Journal of Physical Chemistry Letters_ **2020** 11 (23), 10073-10080 
-
 
 
