@@ -13,7 +13,7 @@ import numpy as np
 
 def parser() -> argparse.ArgumentParser:
     result = argparse.ArgumentParser(description=__doc__)
-    result.add_argument("--ca-nac-root", type=Path, default=os.environ.get("CA_NAC_ROOT", str(Path(__file__).resolve().parents[1])))
+    result.add_argument("--ca-nac-root", type=Path, default=os.environ.get("CA_NAC_ROOT", str(Path(__file__).resolve().parents[2])))
     result.add_argument("--run-dir-pattern", required=True)
     result.add_argument("--source", choices=("abacus", "hamgnn"), required=True)
     selection = result.add_mutually_exclusive_group(required=True)

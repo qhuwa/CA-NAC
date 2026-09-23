@@ -16,9 +16,14 @@ is a code base to accurately and efficiently evaluate nonadiabatic coupling (NAC
 
 ## ABACUS and HamGNN workflows
 
-See [assisted-scripts/README.md](assisted-scripts/README.md) for preparing
-Gamma-point eigenstates from ABACUS SCF matrices or HamGNN predictions, generating
-calibrated adjacent-frame AO overlaps, and running raw or state-tracked CA-NAC.
+The [NAC workflows](workflows/README.md) are organized by input source:
+
+- [ABACUS](workflows/abacus/README.md): SCF matrices to eigenstates and calibrated
+  adjacent-frame AO overlaps.
+- [HamGNN](workflows/hamgnn/README.md): predicted Hamiltonians to eigenstates,
+  using the ABACUS-generated AO overlaps.
+- [Common NAC projection](workflows/common/README.md): prepared eigenstates and
+  overlaps to raw or state-tracked CA-NAC.
 
 ## Reference
 
@@ -39,5 +44,4 @@ Citation is much appreciated. 👍
   Weibin Chu, Qijing Zheng, Alexey V. Akimov, Jin Zhao, Wissam A. Saidi, and Oleg V. Prezhdo
 
   _The Journal of Physical Chemistry Letters_ **2020** 11 (23), 10073-10080 
-
 
